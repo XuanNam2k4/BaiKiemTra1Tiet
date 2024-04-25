@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BAI1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bai1.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container-flud">
+        <div class="header">
+            <div class="logo">
+                <img src="./img/logokfc3.jpg" alt="">
+            </div>
+         <div class="container">
+             <div class="menu">
+                 <li class="home1"  onclick="moveBai1()"><a href="#">TRANG CHỦ
+                   
+                 </a></li>
+                
+                 <li onclick="movethucdon()"><a href="#">THỰC ĐƠN
+                   
+                 </a></li>
+                 <li class="home2"><a href="#">DỊCH VỤ</a></li>
+                 <li><a href="#">DANH MỤC</a></li>
+                 <li><a href="#">THÔNG TIN
+                    
+                 </a></li>
+                
+              
+             </div>
+           
+             
+            </div>
+        </div>
+
+        <!-- phần dướI -->
+        <div class="nav2">
+           
+                <h2>Luôn có món ăn mới</h2>
+                <div class="slider">
+                    <img src="./img/hinh1.jpg" alt="anh 1">
+                    <img src="./img/hinh2.jpg" alt="anh 2">
+                    <img src="./img/hinh3.jpg" alt="anh 3">
+                    <img src="./img/hinh4.jpg" alt="anh 4">
+                    <img src="./img/hinh5.jpg" alt="anh 5">
+                    <img src="./img/hinh6.jpg" alt="anh 6">
+                   
+                </div>
+           
+                <div class="banner">
+                    <h3>KHÁM PHÁ THÊM</h3>
+                    <div class="card1">
+                        <img src="./img/backgorund1.jpg" alt="">
+                       <p>Tìm hiểu thêm các món ăn nhanh và đa dạng cùng các thức uống độc đáo có tại KFC.</p>
+                    </div>
+                    <div class="card2">
+                        <img src="./img/uudai.png" alt="">
+                     <div class="p1">
+                        Với cam kết "Tươi và Ngon" cùng các lựa chọn phong phú
+                        từ món ăn quốc tế quen thuộc đến món ăn địa phương và thức ăn đường phố biển , đã mang đến cho bạn sự hài lòng mong muốn.
+                     </div>
+                    </div>
+
+                   <div class="card3">
+                    <img src="https://static.kfcvietnam.com.vn/images/content/home/carousel/lg/Socola.webp?v=3QXzng" alt="">
+                   </div> 
+                  
+                </div>
+
+               
+
+        </div>
+
+       
+       
+        <div class="bass">
+            <h4>DANH MỤC MÓN ĂN</h4>
+        </div>
+
+        <section class="product">
+            <!-- product 1-->
+           
+            <div class="card">
+                <img src="./img/thucuong.jpg" alt="">
+                 <div class="card-body">
+                   <div class="card-title">
+                     THỨC UỐNG TRÁNG MIỆNG
+                   </div>
+                   
+                 </div>
+               </div>
+
+                
+              <div class="card">
+               <img src="./img/thucannhe.jpg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                THỨC ĂN NHẸ
+                  </div>
+                 
+                </div>
+              </div>
+
+                
+              <div class="card">
+                <img src="./img/combonhom.jpg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                 COMBO 1 NGƯỜI
+                  </div>
+                
+                </div>
+              </div>
+
+                
+              <div class="card">
+               <img src="./img/garan.jpg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                  GÀ RÁN - GÀ QUAY
+                  </div>
+                  
+                </div>
+              </div>
+
+                
+              <div class="card">
+               <img src="./img/burgur.jpg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                  BURGUR - MỲ Ý - CƠM
+                  </div>
+                 
+                </div>
+              </div>
+
+        </section>
+    </div>
+
+    
+    <script type="text/javascript"> 
+        let slideIndex=0;
+   showSlides();
+   function showSlides(){
+       let slides = document.querySelectorAll(".slider img");
+       for(let i=0;i<slides.length;i++) 
+           slides[i].style.display = "none";
+       slideIndex++;
+       if( slideIndex>slides.length)
+           slideIndex = 1;
+       //hiểN thị hình ành
+       slides[slideIndex-1].style.display="block";
+        // cu 4s thi hien thi
+       setTimeout(showSlides,4000);
+
+   }
+           </script>
+
+
+
+   <script>
+    function moveBai1() {
+  window.location.href = "http://127.0.0.1:5500/Bai1.html";
+}
+function movethucdon() {
+  window.location.href = "http://127.0.0.1:5500/thucan.html";
+}
+   </script>
+
+</body>
+</html>
